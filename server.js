@@ -9,6 +9,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.json()); //req.body
 
 //middleware function
+// new comment
 const logRequest = (req, res, next) => {
   console.log(
     `[${new Date().toLocaleString()}] Request made to :${req.originalUrl}`
